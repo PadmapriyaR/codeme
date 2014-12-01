@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<title>Thiagarajar College Admission Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Timeline Style CV / Resume / vCard Bootstrap Template.">
+	<meta name="author" content="The Develovers">
+
+	<!-- CSS -->
+	<link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+	function checkEmail() 
+{
+     
+    var email = document.getElementById('entry.22417120');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var fil1=/^[A-Za-z\. ]{3,20}$/;
+	var fil2=/^[0-9]*\d$/;
+	var fil3=/^[A-Z\s\.]+$/;
+	var mo1=/^[7-9][0-9]{9}$/;
+	var z=/^\d{5,6}(?:[-\s]\d{4})?$/;
+	var mm=/^[0-9]{1,3}$/;
+	var totm=/^[0-9]{1,4}$/;
+	var ag=/^[1-9]?[0-9]{1}$|^100$/;
+	var add=/[a-zA-Z\d\s\-\,\#\.\+]+/;
+	var date=/((0[1-9])|(1[0-2]))[\/-]((0[1-9])|(1[0-9])|(2[0-9])|(3[0-1]))[\/-](\d{4})/;
+	var da=/^\d{1,2}\/\d{4}$/;
+	<!--var date1=/((0[1-9])|(1[0-2]))[\/-]|(2[0-9])|(3[0-1]))[\/-](\d{4})/;-->
+	var bgr=/^(?:AB|A|B|O)[-+]$/;
+	<!--var yop=/^[A-Za-z\-][0-9]{1,3}$/;-->
+	if(document.forms["form"]["entry.892720315"].value=="Select Course")
+	{
+	alert('Please Select the Course');
+	return false;
+	document.forms[form]["entry.892720315"].focus();
+	}
+	if(!document.getElementsByName('entry.789974744')[0].checked && !document.getElementsByName('entry.789974744')[1].checked)
+	{
+	alert('Pls choose yes/no for Quota');
+	return false;
+	<!--document.form.entry.789974744[0].focus();-->
+    }
+	if(document.getElementsByName('entry.789974744')[0].checked)
+	{
+	if(document.forms["form"]["entry.160544494"].checked==false && document.forms["form"]["entry.160544494"].checked==false && document.forms["form"]["entry.160544494"].checked==false && document.forms["form"]["entry.160544494"].checked==false)
+	{
+	alert('Please Specify the Quota');
+	<!--document.form.c1.focus();-->
+	return false;
+	}
+	}
+	if(!fil3.test(document.forms["form"]["entry.53734720"].value))
+	{
+	alert('Please enter your name in BLOCK Letters');
+	<!--document.form.t3.focus();-->
+	return false;
+	}
+	if(!document.getElementsByName('entry.1148161701')[0].checked && !document.getElementsByName('entry.1148161701')[1].checked)
+	{
+	 alert('Pls choose the Gender');
+	 <!--document.form.g[0].focus();-->
+	 return false;
+    }
+	if(!date.test(document.forms["form"]["entry.546483850"].value))
+	{
+	alert('Please enter your date in the Format of "mm/dd/yyyy"');
+	<!--document.form.dob1.focus();-->
+	return false;
+	}
+	if(!ag.test(document.forms["form"]["entry.1182469388"].value))
+	{
+	alert('Invalid age');
+	<!--document.form.te3.focus();-->
+	return false;
+	}
+	if(!filter.test(email.value)) 
+	{
+    alert('Please provide a valid email address');
+	<!--document.form.txtEmail.value="";-->
+	<!--document.form.txtEmail.focus();-->
+    return false;
+    }
+	if(email=="")
+	{
+	alert('Please mention your E-mail Address');
+	<!--document.form.txtEmail.focus();-->
+	return false;
+	}
+	if(!mo1.test(document.forms['form']["entry.1306520243"].value))
+	{
+	alert('Invalid Mobile Number');
+	<!--document.form.mobile.focus();-->
+	return false;
+	}
+		if(!bgr.test(document.forms["form"]["entry.1759226786"].value))
+	{
+	alert('Invalid Blood Group');
+	<!--document.form.t4.value="";-->
+	<!--document.form.t4.focus();-->
+	return false;
+	}
+	if(document.forms["form"]["entry.1423158109"].selectedIndex=="")
+	{
+	 alert('Please choose your Community');
+	 <!--document.form.com.focus();-->
+	 return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1305160374"].value))
+	{
+	alert('Please enter your subcaste');
+	<!--document.form.t5.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.79433696"].value))
+	{
+	alert('Please enter your Native District');
+	<!--document.form.t6.focus();-->
+	return false;
+	}
+	if(!document.getElementsByName('entry.1968375577')[0].checked && !document.getElementsByName('entry.1968375577')[1].checked)
+	{
+	 alert('Please choose your Area');
+	 <!--document.form.rur[0].focus();-->
+	 return false;
+    }
+	 if(!document.getElementsByName('entry.1466631305')[0].checked && !document.getElementsByName('entry.1466631305')[1].checked)
+	{
+	 alert('Please choose your religion');
+	 document.form.re[0].focus();
+	 return false;
+     }
+	 	if(!fil1.test(document.forms["form"]["entry.1059113613"].value))
+	{
+	alert('Please enter your Nationality');
+	<!--document.form.t8.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1205633881"].value))
+	{
+	alert('Please enter your Mother Tongue');
+	<!--document.form.t9.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1235809713"].value))
+	{
+	alert('Please enter your Father Name');
+	<!--document.form.t10.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1534819333"].value))
+	{
+	alert('Please enter your Father\'s Occupation');
+	<!--document.form.t11.focus();-->
+	return false;
+	}
+	if(!fil2.test(document.forms["form"]["entry.432849064"].value))
+	{
+	alert('Please enter your Father\'s annual Income');
+	<!--document.form.t12.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1456318044"].value))
+	{
+	alert('Please enter your Mother Name');
+	<!--document.form.t13.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1494905569"].value))
+	{
+	alert('Please enter your Mother\'s Occupation otherwise Enter null');
+	<!--document.form.t14.focus();-->
+	return false;
+	}
+	if(!fil2.test(document.forms["form"]["entry.731120422"].value))
+	{
+	alert('Please enter your Mother\'s annual Income otherwise Enter null');
+	<!--document.form.t15.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.294712832"].value))
+	{
+	alert('Please enter your Guardian name.Otherwise Enter null');
+	<!--document.form.t16.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.143667998"].value))
+	{
+	alert('Please enter your Guardian\'s Occupation otherwise Enter null');
+	<!--document.form.t17.focus();-->
+	return false;
+	}
+	if(!fil2.test(document.forms["form"]["entry.219380311"].value))
+	{
+	alert('Please enter your Guardian\'s annual Income otherwise Enter null');
+	<!--document.form.t18.focus();-->
+	return false;
+	}
+	if(!add.test(document.forms["form"]["entry.1096492875"].value))
+	{
+	alert('Please enter your correct address');
+	<!--document.form.addr.focus();-->
+	return false;
+	}
+	if(!z.test(document.forms["form"]["entry.583242604"].value))
+	{
+	alert('Invalid PinCode');
+	<!--document.form.zip1.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1455549724"].value))
+	{
+	alert('Please enter your School name');
+	<!--document.form.t19.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.210280627"].value))
+	{
+	alert('Please enter your School Location');
+	<!--document.form.t20.focus();-->
+	return false;
+	}
+	if(!fil2.test(document.forms["form"]["entry.2049342425"].value))
+	{
+	alert('Please Enter your number of apperences');
+	<!--document.form.n1.focus();-->
+	return false;
+	}
+	if(!fil2.test(document.forms["form"]["entry.144693842"].value))
+	{
+	alert('Please Enter your Roll number');
+	<!--document.form.n2.focus();-->
+	return false;
+	}
+	if(!da.test(document.forms["form"]["entry.1626338386"].value))
+	{
+	alert('Pls Enter the month and year only');
+	<!--document.form.my1.value="";-->
+	<!--document.form.my1.focus();-->
+	return false;
+	}
+	if(!document.getElementsByName('entry.1585200839')[0].checked && !document.getElementsByName('entry.1585200839')[1].checked)
+	{
+	 alert('Pls choose either Acadamic/Vocational');
+	 <!--document.form.str[0].focus();-->
+	 return false;
+    }
+	if(!fil1.test(document.forms["form"]["entry.2036674550"].value))
+	{
+	alert('Please enter your Part I');
+	<!--document.form.t21.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1697277899"].value))
+	{
+	alert('Please enter your Part II');
+	<!--document.form.t22.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.919872831"].value))
+	{
+	alert('Please enter your Major subject 1');
+	<!--document.form.t23.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1853444140"].value))
+	{
+	alert('Please enter your Major subject 2');
+	<!--document.form.t24.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.214988597"].value))
+	{
+	alert('Please enter your Major subject 3');
+	<!--document.form.t25.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.1931485710"].value))
+	{
+	alert('Please enter your Major subject 4');
+	<!--document.form.t26.focus();-->
+	return false;
+	}
+		if(!mm.test(document.forms["form"]["entry.879178806"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m1.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.879178806"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m1.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1290087152"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m2.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1233941856"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m3.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1359681903"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m4.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.2026247063"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m5.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.965444781"].value))
+	{
+	alert('Please enter your correct mark');
+	<!--document.form.m6.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.277304573"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma1.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1701168281"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma2.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1371348529"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma3.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.1642260623"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma4.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.461503842"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma5.focus();-->
+	return false;
+	}
+	if(!mm.test(document.forms["form"]["entry.421999243"].value))
+	{
+	alert('Please enter the maximum mark in 12th std');
+	<!--document.form.ma6.focus();-->
+	return false;
+	}
+	if(document.forms["form"]["entry.1202623210"].value!=6)
+	{
+	alert('Total subject should be 6');
+	<!--document.form.t27.focus();-->
+	return false;
+	}
+	if(!totm.test(document.forms["form"]["entry.2045366974"].value))
+	{
+	alert('Invalid Total');
+	<!--document.form.m7.focus();-->
+	return false;
+	}
+	if(!totm.test(document.forms["form"]["entry.544099865"].value))
+	{
+	alert('Invalid maximum mark');
+	<!--document.form.ma7.focus();-->
+	return false;
+	}
+	if(!fil1.test(document.forms["form"]["entry.413903242"].value))
+	{
+	alert('Please enter your Co-Curricular Activity');
+	<!--document.form.t28.focus();-->
+	return false;
+	}
+	 	if(!document.getElementsByName('entry.1910952384')[0].checked && !document.getElementsByName('entry.1910952384')[1].checked)
+	{
+	 alert('Pls choose yes/no for Hostel');
+	 <!--document.form.yn[0].focus();-->
+	 return false;
+     }
+	 }
+ function findtot()
+ {
+ document.forms["form"]["entry.2045366974"].value=eval(parseInt(document.forms["form"]["entry.879178806"].value)+parseInt(document.forms["form"]["entry.1290087152"].value)+parseInt(document.forms["form"]["entry.1233941856"].value)+parseInt(document.forms["form"]["entry.1359681903"].value)+parseInt(document.forms["form"]["entry.2026247063"].value)+parseInt(document.forms["form"]["entry.965444781"].value));
+ }
+ function findtotal()
+ {
+ document.forms["form"]["entry.544099865"].value=eval(parseInt(document.forms["form"]["entry.277304573"].value)+parseInt(document.forms["form"]["entry.1701168281"].value)+parseInt(document.forms["form"]["entry.1371348529"].value)+parseInt(document.forms["form"]["entry.1642260623"].value)+parseInt(document.forms["form"]["entry.461503842"].value)+parseInt(document.forms["form"]["entry.421999243"].value));
+ }    </script>
+
+</head>
+<body data-spy="scroll" data-target="#main-nav">
+  <div class="container">
+    <div class="row">
+        <form role="form" action="next.html">
+		<br>
+		<div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
+                <div class="form-group">
+                    <label for="entry.892720315">Major</label>
+                    <div class="input-group">
+                        <select class="form-control" name="entry.892720315" id="entry_892720315" required>
+						<option>Select Course</option>
+						<option>B.A(Tamil)</option>
+						<option>B.A(English)</option>
+						<option>B.A(Economics(Tamil Medium))</option>
+						<option>B.Sc(Computer Sciecnce)</option>
+						<option>B.Sc(Physics)</option>
+						<option>B.Sc(Chemistry)</option>
+						<option>B.Sc(Maths)</option>
+						<option>B.Sc(Botany)</option>
+						<option>B.Sc(Industrial Micro Biology)</option>
+						<option>B.Com</option>
+						<option>BBA</option>
+						</select>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.789974744">Do you want any quota Specifically?</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.789974744" id="group_789974744_1">        Yes</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.789974744" id="group_789974744_2">        No</label>
+					</div>
+                </div>
+                <div class="form-group">
+                    <label for="entry.160544494">If so,Please Specify </label>
+                    <div class="input-group">
+						<label><input type="checkbox" name="entry.160544494" id="group_160544494_1">        Differently Abled</label><br>
+						<label><input type="checkbox" name="entry.160544494" id="group_160544494_2">        Ex-Serivce man of Tamil Nadu origin</label><br>
+						<label><input type="checkbox" name="entry.160544494" id="group_160544494_3">        Tamil Student of Andhaman Nichobar Islands</label><br>
+						<label><input type="checkbox" name="entry.160544494" id="group_160544494_4">        Outstanding Sport Person</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="entry.53734720">Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_53734720" name="entry.53734720" placeholder="Enter Your Name in Block Letters" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1148161701">Sex</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.1148161701" id="group_1148161701_1">        Male</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1148161701" id="group_1148161701_2">        Female</label>
+					</div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.546483850">Date Of Birth</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_546483850" name="entry.546483850" placeholder="mm/dd/yyyy" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1182469388">Age</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1182469388" name="entry.1182469388" placeholder="Enter Your Age" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.22417120">E-mail</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_22417120" name="entry.22417120" placeholder="Enter Your E-mail Address" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1306520243">Mobile Number</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1306520243" name="entry.1306520243" placeholder="Enter Your 10 digit Mobile Number" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1759226786">Blood Group</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1759226786" name="entry.1759226786" placeholder="Enter Your Blood Group" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1423158109">Community</label>
+                    <div class="input-group">
+                        <select class="form-control" name="entry.1423158109" id="entry_1423158109" required>
+						<option>Select your community</option>
+						<option>BC</option>
+						<option>MBC</option>
+						<option>SC</option>
+						<option>ST</option>
+						<option>OC</option>
+						</select>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1305160374">Sub Caste</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1305160374" name="entry.1305160374" placeholder="Enter Your Sub Caste" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.79433696">Native District</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_79433696" name="entry.79433696" placeholder="Enter Your Native District" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1968375577">Rural/Urban</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.1968375577" id="group_1968375577_1">        Rural</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1968375577" id="group_1968375577_2">        Urban</label>
+					</div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1466631305">Religion</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.1466631305" id="group_1466631305_1">        Hindu</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1466631305" id="group_1466631305_2">        Christian</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1466631305" id="group_1466631305_3">        Muslim</label>
+					</div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1059113613">Nationality</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1059113613" name="entry.1059113613" placeholder="Enter Your Nationality" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1205633881">Mother Tongue</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1205633881" name="entry.1205633881" placeholder="Enter Your Mother Tongue" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1235809713">Father Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1235809713" name="entry.1235809713" placeholder="Enter Your Father Name,Else enter 'Late'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1534819333">Father's Occupation</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1534819333" name="entry.1534819333" placeholder="Enter Your Father's Occupation,Else enter 'null' " required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.432849064">Father's Annual Income</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_432849064" name="entry.432849064" placeholder="Enter Your Father's Annual Income,Else enter '0'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1456318044">Mother Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1456318044" name="entry.1456318044" placeholder="Enter Your Mother Name,Else enter 'Late'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1494905569"">Mother's Occupation</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1494905569"" name="entry.1494905569"" placeholder="Enter Your Mother's Occupation,Else enter 'null'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.731120422">Mother's Annual Income</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_731120422" name="entry.731120422" placeholder="Enter Your Mother's Annual Income,Else enter '0'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.294712832">Guardian Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_294712832" name="entry.294712832" placeholder="Enter Your Guardian Name,Else enter 'null'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.143667998">Guardian's Occupation</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_143667998" name="entry.143667998" placeholder="Enter Your Guardian's Occupation,Else enter 'null'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.219380311">Guardian's Annual Income</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_219380311" name="entry.219380311" placeholder="Enter Your Guardian's Annual Income,Else enter '0'" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="entry.1096492875">Address</label>
+                    <div class="input-group">
+                        <textarea name="entry.1096492875" id="entry_1096492875" class="form-control" rows="5" required></textarea>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				 <div class="form-group">
+                    <label for="entry.583242604">Pincode</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_583242604" name="entry.583242604" placeholder="Enter Your Pincode Number"  required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1455549724">Name of the Institution Last studied</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1455549724" name="entry.1455549724" placeholder="Enter Your School Names" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.210280627">Location of School</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_210280627" name="entry.210280627" placeholder="Enter Your School's Location" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.2049342425">No.of.Appearances</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_2049342425" name="entry.2049342425" placeholder="Enter Your Attemption of Examination" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.144693842">Register No of HSC in I Appearance</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_144693842" name="entry.144693842" placeholder="Enter Your Register Number" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1626338386">Month and Year of Passing</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1626338386" name="entry.1626338386" placeholder="Enter the month and year of your public examination" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="Inputstr">Stream</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.1585200839" id="group_1585200839_1">        Acadamic</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1585200839" id="group_1585200839_2">        Vocational</label>
+					</div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.2036674550">Enter the Subject Title for Part-I</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_2036674550" name="entry.2036674550" placeholder="Enter the Part-I Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1697277899">Enter the Subject Title for Part-II</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1697277899" name="entry.1697277899" placeholder="Enter the Part-II Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.919872831">Enter the Subject Title for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_919872831" name="entry.919872831" placeholder="Enter the Part-III Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div> 
+				<div class="form-group">
+				<label for="entry.1853444140">Enter the Subject Title for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1853444140" name="entry.1853444140" placeholder="Enter the Part-III Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.214988597">Enter the Subject Title for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_214988597" name="entry.214988597" placeholder="Enter the Part-III Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.1931485710">Enter the Subject Title for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1931485710" name="entry.1931485710" placeholder="Enter the Part-III Title" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.879178806">Enter the Mark Obtained for Part-I</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_879178806" name="entry.879178806" placeholder="Enter the Mark Obtained for Part-I Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.1290087152">Enter the Mark Obtained for Part-II</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1290087152" name="entry.1290087152" placeholder="Enter the Mark Obtained for Part-II Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.1233941856">Enter the Mark Obtained for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1233941856" name="entry.1233941856" placeholder="Enter the Mark Obtained for Part-III Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.1359681903">Enter the Mark Obtained for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_1359681903" name="entry.1359681903" placeholder="Enter the Mark Obtained for Part-III Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.2026247063">Enter the Mark Obtained for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_2026247063" name="entry.2026247063" placeholder="Enter the Mark Obtained for Part-III Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.965444781">Enter the Mark Obtained for Part-III</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_965444781" name="entry.965444781" placeholder="Enter the Mark Obtained for Part-III Out of 200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				 <label for="entry.2045366974">Enter the Total Mark for all Parts</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_2045366974" name="entry.2045366974" placeholder="Enter the Total Mark Obtained for all Parts Out of 1200" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+				  <label for="entry.413903242">Subject Preferred under co-curricular activities</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="entry_413903242" name="entry.413903242" placeholder="Enter the Preferred Subject under co-curricular activities" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                   </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.44492060">Do you have any Outstanding Sports Certificate</label>
+                    <div class="input-group">
+						<label><input type="checkbox" name="entry.44492060" id="group_44492060_1">        District</label><br>
+						<label><input type="checkbox" name="entry.44492060" id="group_44492060_2">        State</label><br>
+						<label><input type="checkbox" name="entry.44492060" id="group_44492060_3">        National</label><br>
+						<label><input type="checkbox" name="entry.44492060" id="group_44492060_4">        No</label>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="entry.1910952384">Do you need Hostel accommodation??(Seperate hostel available for boys and girls)</label>
+                    <div class="input-group">
+                        <label><input type="radio" name="entry.1910952384" id="group_1910952384_1">        Yes</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label><input type="radio" name="entry.1910952384" id="group_1910952384_2">        No</label>
+					</div>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right" onclick="return checkEmail();"/>
+            </div>
+			<div class="col-lg-2"></div>
+        </form>
+        
+    </div>
+</div>
+<!-- END WRAPPER -->
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
